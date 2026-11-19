@@ -1,0 +1,12 @@
+
+h1 {
+    color: #0d6efd;
+}
+
+.result {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
