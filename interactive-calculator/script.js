@@ -1,14 +1,13 @@
 
 function calculate() {
 
-    // Get input values
+
     let num1 = Number(document.getElementById("num1").value);
     let num2 = Number(document.getElementById("num2").value);
     let operator = document.getElementById("operator").value;
 
     let result;
 
-    // Check empty inputs
     if (
         document.getElementById("num1").value === "" ||
         document.getElementById("num2").value === ""
@@ -18,14 +17,14 @@ function calculate() {
         return;
     }
 
-    // Check operator
+    
     if (operator === "") {
         document.getElementById("result").innerHTML =
             "Please select an operator.";
         return;
     }
 
-    // Perform calculation
+    
     switch (operator) {
 
         case "+":
@@ -54,13 +53,13 @@ function calculate() {
             result = "Invalid operator";
     }
 
-    // Display result
+   
     document.getElementById("result").innerHTML =
         "Result: " + result;
 }
 
 
-// Clear calculator
+
 function clearCalculator() {
 
     document.getElementById("num1").value = "";
